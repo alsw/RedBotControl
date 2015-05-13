@@ -147,6 +147,7 @@ void dibujarPantalla() {
   background(0);
 
   //Dibuja la mira en rojo
+  strokeWeight(10);
   stroke(255, 0, 0);
   line(posX, 0, posX, pantY);  //Linea vertical
   line(0, posY, pantX, posY);  //Linea horizontal
@@ -154,7 +155,8 @@ void dibujarPantalla() {
   //Dibuja el rectangulo en verde
   stroke(0, 255, 0);
   noFill();
-  rect(posX - tamX/2, posY - tamY/2, tamX, tamY);
+  rect(posX - tamX/2, posY - tamY/2, tamX, tamY,10);
+  strokeWeight(1);
 
   //Establece el tamaño de la fuente a 1/4 de la altura de la barra
   textSize(alturaBarra/4);
