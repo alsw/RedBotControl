@@ -1,7 +1,5 @@
-#include <RedBot.h>
-
-RedBotMotor motor;
-RedBotSoftwareSerial redbotSerial;
+int MotorD[2] = {3, 6};
+int MotorI[2] = {9, 11};
 
 unsigned int estadoTrama = 0;
 
@@ -15,17 +13,19 @@ int pBuffer = 0;
 char coord = 0;
 
 void setup() {
-  //Serial.begin(9600);//This will open the serial port to send values out to calibrate sensors
-  redbotSerial.begin(9600);
-  redbotSerial.println("Hello world!");//This should print once to make sure you're getting serial communication
+  Serial.begin(9600);
+  for (int i = 0; i < 2; i++) {
+    pinMode(MotorD, OUTPUT);
+    pinMode(MotorI, OUTPUT);
+  }
 }
 
 void loop() {
   char caracter;
   int valor;
 
-  while (redbotSerial.available()) {
-    caracter = redbotSerial.read();
+  while (Serial.available()) {
+    caracter = Serial.read();
     switch (estadoTrama) {
       case 0:
         if (caracter == 'x' || caracter == 'X') {
@@ -60,11 +60,6 @@ void loop() {
             valX = valor;
           if (coord == 'Y')
             valY = valor;
-
-          redbotSerial.print("X=");
-          redbotSerial.print(valX);
-          redbotSerial.print(" Y=");
-          redbotSerial.println(valY);
           estadoTrama = 0;
         }
         break;
@@ -79,6 +74,18 @@ void loop() {
   motorL = constrain(motorL, -255, 255);
   motorR = constrain(motorR, -255, 255);
 
-  motor.leftDrive(motorL);
-  motor.rightDrive(motorR);
+  Mover(MotorD, motorL);
+  Mover(MotorI, motorR);
+}
+
+void Mover(int Motor[], int Valor) {
+  if (Valor > 0) {
+    analogWrite(Motor[0], Valor);
+    analogWrite(Motor[1], 0);
+  }
+  else {
+    Valor = -Valor;
+    analogWrite(Motor[0], 0);
+    analogWrite(Motor[1], Valor);
+  }
 }
