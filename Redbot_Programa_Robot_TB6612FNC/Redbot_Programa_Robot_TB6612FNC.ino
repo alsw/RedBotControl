@@ -1,12 +1,15 @@
-int MotorD[2] = {3, 6};
-int MotorI[2] = {9, 11};
+int MotorD[2] = {13, 12};
+int MotorI[2] = {10, 9};
+int pwmD = 6;
+int pwmI = 5;
+int StSy = 11;
 
 unsigned int estadoTrama = 0;
 
 int valX = 0;
 int valY = 0;
-int motorL = 0;
-int motorR = 0;
+int VelocidadD = 0;
+int VelocidadI = 0;
 
 char bufferNum[32];
 int pBuffer = 0;
@@ -18,6 +21,12 @@ void setup() {
     pinMode(MotorD, OUTPUT);
     pinMode(MotorI, OUTPUT);
   }
+
+  pinMode(pwmD, OUTPUT);
+  pinMode(pwmI, OUTPUT);
+
+  pinMode(StSy, OUTPUT);
+  digitalWrite(StSy, 1);
 }
 
 void loop() {
@@ -66,26 +75,27 @@ void loop() {
     }
   }
 
-  motorL = map(valY, -100, 100, -255, 255);
-  motorL -= map(valX, -100, 100, -255, 255);
-  motorR = map(valY, -100, 100, -255, 255);
-  motorR += map(valX, -100, 100, -255, 255);
+  VelocidadD = map(valY, -100, 100, -255, 255);
+  VelocidadD -= map(valX, -100, 100, -255, 255);
+  VelocidadI = map(valY, -100, 100, -255, 255);
+  VelocidadI += map(valX, -100, 100, -255, 255);
 
-  motorL = constrain(motorL, -255, 255);
-  motorR = constrain(motorR, -255, 255);
+  VelocidadD = constrain(VelocidadD, -255, 255);
+  VelocidadI = constrain(VelocidadI, -255, 255);
 
-  Mover(MotorD, motorL);
-  Mover(MotorI, motorR);
+  Mover(MotorD, VelocidadD, pwmD);
+  Mover(MotorI, VelocidadI, pwmI);
 }
 
-void Mover(int Motor[], int Valor) {
-  if (Valor > 0) {
-    analogWrite(Motor[0], Valor);
-    analogWrite(Motor[1], 0);
+void Mover(int Motor[], int Valor, int pwm) {
+ if (Valor > 0) {
+    digitalWrite(Motor[0], 1);
+    digitalWrite(Motor[1], 0);
   }
   else {
     Valor = -Valor;
-    analogWrite(Motor[0], 0);
-    analogWrite(Motor[1], Valor);
+    digitalWrite(Motor[0], 0);
+    digitalWrite(Motor[1], 1);
   }
+  analogWrite(pwm, Valor);
 }
