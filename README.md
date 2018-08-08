@@ -4,7 +4,9 @@ Proyecto y video Tutoriales sobre el RedBot, que es un robot basado a uno de Spa
 
 # Video Tutoriales
 
-![https://www.youtube.com/playlist?list=PLWQQswW6kqpUPdrnoageA8fQwyNXEEKyQ](https://img.youtube.com/vi/ASOIDtuQ3WI/sddefault.jpg)
+[Link PlayList RedBot](https://www.youtube.com/playlist?list=PLWQQswW6kqpUPdrnoageA8fQwyNXEEKyQ)
+
+![Imagen Tutorial](https://img.youtube.com/vi/ASOIDtuQ3WI/sddefault.jpg)
 
 # Diagrama
 
@@ -23,7 +25,9 @@ Esperamos ir publicando todo los codigo y explicasion por cada secion
 
 Para empezar definamos como se armara y como funcionara al final del proyecto 
 
-![https://www.youtube.com/playlist?list=PLWQQswW6kqpUPdrnoageA8fQwyNXEEKyQ](https://img.youtube.com/vi/ASOIDtuQ3WI/hqdefault.jpg)
+[Link Video Secion 1](https://www.youtube.com/playlist?list=PLWQQswW6kqpUPdrnoageA8fQwyNXEEKyQ)
+
+![Video Secion 1](https://img.youtube.com/vi/ASOIDtuQ3WI/hqdefault.jpg)
 
 # Preguntas o sugerencia
 
