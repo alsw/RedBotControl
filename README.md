@@ -25,7 +25,7 @@ Esperamos ir publicando todo los codigo y explicasion por cada secion
 
 Para empezar definamos como se armara y como funcionara al final del proyecto 
 
-[Link Video Secion 1](https://www.youtube.com/playlist?list=PLWQQswW6kqpUPdrnoageA8fQwyNXEEKyQ)
+[Link Video Secion 1](https://www.youtube.com/watch?v=ASOIDtuQ3WI&index=2&t=5s&list=PLWQQswW6kqpUPdrnoageA8fQwyNXEEKyQ)
 
 ![Video Secion 1](https://img.youtube.com/vi/ASOIDtuQ3WI/hqdefault.jpg)
 
