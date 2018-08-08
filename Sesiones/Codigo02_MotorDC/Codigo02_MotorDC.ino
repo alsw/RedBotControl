@@ -1,3 +1,11 @@
+/*
+ *  Codigo del segundo video de RedBot
+ *  Sobre como manejar motores DC
+ *  URL: 
+ */
+
+
+//Pines de los motores 
 int MotorD[2] = {13.12};
 int MotorI[2] = {9, 10};
 int PwmD = 6;
@@ -16,11 +24,12 @@ void setup() {
 }
 
 void loop() {
-  VelocidadMotor(MotorD, PwmD, 255);
-  VelocidadMotor(MotorI, PwmI, 255);
+  VelocidadMotor(MotorD, PwmD, 255);//ejemplo de Motor Derecho
+  VelocidadMotor(MotorI, PwmI, 255);//ejemplo de Motor Izquierdo
 }
 
-
+//Funcion para Poner una velocidad a un motor 
+//La velocidad puede ser desde -255 a 255 
 void VelocidadMotor(int Motor[], int PWM, int Velocidad) {
   if (Velocidad > 0 ) {
     digitalWrite(Motor[0],  1);
