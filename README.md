@@ -29,6 +29,18 @@ Para empezar definamos como se armara y como funcionara al final del proyecto
 
 ![Video Secion 1](https://img.youtube.com/vi/ASOIDtuQ3WI/hqdefault.jpg)
 
+## Secion 2 - Control de Velocidad Motor DC
+
+Controlar los motores de nuestro robot es muy importante en especial manejar la velocidad, aqui haremos un control por velocidades para poder manejarlo
+
+[Link Video Secion 2](https://www.youtube.com/watch?v=mQ86h4VsKU4&list=PLWQQswW6kqpUPdrnoageA8fQwyNXEEKyQ&index=2)
+
+
+[Codigo  Secion 2](https://github.com/alswnet/RedBotAPP/blob/master/Sesiones/Codigo02_MotorDC/Codigo02_MotorDC.ino )
+
+
+![Video Secion 2](https://img.youtube.com/vi/mQ86h4VsKU4/hqdefault.jpg)
+
 # Preguntas o sugerencia
 
 Lo puede hacer a traves de este link https://github.com/alswnet/RedBotAPP/issues
