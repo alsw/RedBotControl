@@ -17,6 +17,19 @@ Proyecto y video Tutoriales sobre el RedBot, que es un robot basado a uno de Spa
 * Tienda Android: Muy Pronto
 * Descargar el APK: https://github.com/alswnet/RedBotAPP/raw/master/AppAndroid/redbot_control_remoto_android.apk
 
+# Componentes
+
+Aqui dejamos la lista de las piezas para armas el RedBot y los link a nuestra tienda, es posible armas el RedBot con otro componentes similares que tenga a la mano
+
+* Arduino uno o Arduino compatible (SparkFun RedBoard para que sea mas Rojo :D ) - http://alsw.net/tienda/arduino/arduino_compatibles/redboard/
+* Chasis de carrito el nuestro es Shadow Chassis Kit - http://alsw.net/tienda/kits/shadow-chassis-kit/
+* Motores con Reductor DAGU - http://alsw.net/tienda/robotica/motor-corriente-directa/motores-con-reductor-dagu/
+* Par Ruedas de Hule - http://alsw.net/tienda/robotica/piezas_mecanicas/par-ruedas-de-hule/
+* Modulo Bluetooth HC-05 - http://alsw.net/tienda/modulos/modulo_comunicacion/modulo-bluetooth-hc-05/ 
+* Driver para Motor – Dual TB6612FNG - http://alsw.net/tienda/robotica/drivers/driver-para-motor-dual-tb6612fng/
+* (Opcional)  Escudo ProtoShield Kit  - http://alsw.net/tienda/arduino/escudos/escudo-protoshield-kit/
+* (Opcional) 2 x Terminal con tornillo de 2 pines (5mm) - http://alsw.net/tienda/cables_conectores/pines/terminal-con-tornillo-de-2-pines-5mm/
+
 # Seciones
 
 Esperamos ir publicando todo los codigo y explicasion por cada secion
