@@ -48,11 +48,19 @@ Controlar los motores de nuestro robot es muy importante en especial manejar la 
 
 [Link Video Secion 2](https://www.youtube.com/watch?v=mQ86h4VsKU4&list=PLWQQswW6kqpUPdrnoageA8fQwyNXEEKyQ&index=2)
 
-
 [Codigo  Secion 2](https://github.com/alswnet/RedBotAPP/blob/master/Sesiones/Codigo02_MotorDC/Codigo02_MotorDC.ino )
 
-
 ![Video Secion 2](https://img.youtube.com/vi/mQ86h4VsKU4/hqdefault.jpg)
+
+## Secion 3 - Comunicación con Bluetooth (Paquetizado Serial)
+
+Este video se vera como enviar datos por medio del puerto serial para poder ser pocesador por el arduino, que le llamamos paquetizado 
+
+[Link Video Secion 3](https://www.youtube.com/watch?v=ZqNmbsyobcM&list=PLWQQswW6kqpUPdrnoageA8fQwyNXEEKyQ&index=4)
+
+[Codigo  Secion 3](https://github.com/alswnet/RedBotAPP/blob/master/Sesiones/Codigo03_PaqueteBT-A/Codigo03_PaqueteBT-A.ino)
+
+![Video Secion 3](https://img.youtube.com/vi/ZqNmbsyobcM/hqdefault.jpg)
 
 # Preguntas o sugerencia
 
